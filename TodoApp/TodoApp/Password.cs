@@ -10,6 +10,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TodoApp.Model;
 
 namespace TodoApp
 {
@@ -24,10 +25,8 @@ namespace TodoApp
         {
             DataTable dt = new DataTable();
             String sql = "SP_FindPassword";
-            string _connectionString = @"Data Source=DESKTOP-NVFPDDO;Initial Catalog=DBTaller;Integrated Security=False;User=admin;Password=123456;Connect Timeout=0";
-            SqlConnection conexion = new SqlConnection(_connectionString);
-            conexion.Open();
-            SqlDataAdapter dataAdapter = new SqlDataAdapter(sql, conexion);
+            Conexion c = new Conexion();
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(sql, c.conectOpen());
             dataAdapter.SelectCommand.CommandType = CommandType.StoredProcedure;
             dataAdapter.SelectCommand.Parameters.Add("@Username", SqlDbType.Text).Value = textBox1.Text;
            // dataAdapter.SelectCommand.Parameters.Add("@Password", SqlDbType.Text).Value = textBox1.Text;
@@ -50,7 +49,7 @@ namespace TodoApp
                 SmtpClient smtp = new SmtpClient();
                 smtp.Host = "smtp.gmail.com";
                 smtp.Port = 587;
-                smtp.EnableSsl = false;
+                smtp.EnableSsl = true;
                 smtp.UseDefaultCredentials = false;
                 smtp.Credentials = new NetworkCredential("romeromarquez12@gmail.com", "adentroC13");
 

@@ -53,6 +53,12 @@
       <DependentUpon>addGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="CreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUser.Designer.cs">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGrupo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,7 @@
     <Compile Include="main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Conexion.cs" />
     <Compile Include="Model\Grupo.cs" />
     <Compile Include="Password.cs">
       <SubType>Form</SubType>
@@ -80,6 +87,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CreateUser.resx">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmGrupo.resx">
       <DependentUpon>FrmGrupo.cs</DependentUpon>
     </EmbeddedResource>
