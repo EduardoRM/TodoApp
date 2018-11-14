@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace TodoApp
 {
-    public partial class main : Form
+    public partial class addGroup : Form
     {
-        public main()
+        public addGroup()
         {
             InitializeComponent();
-        }
-
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
-        {
-
         }
     }
 }
