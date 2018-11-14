@@ -38,7 +38,6 @@ namespace TodoApp
                 String emailUser = dt.Rows[0]["Email"].ToString();
                 String password = dt.Rows[0]["Password"].ToString();
 
-
                 MailMessage email = new MailMessage();
                 email.To.Add(new MailAddress(emailUser));
                 email.From = new MailAddress("romeromarquez12@gmail.com");
@@ -50,10 +49,10 @@ namespace TodoApp
                 SmtpClient smtp = new SmtpClient();
                 smtp.Host = "smtp.gmail.com";
                 smtp.Port = 587;
-                smtp.EnableSsl = false;
                 smtp.UseDefaultCredentials = false;
+                smtp.EnableSsl = true;
                 smtp.Credentials = new NetworkCredential("romeromarquez12@gmail.com", "adentroC13");
-
+                
                 string output = null;
 
                 try
@@ -65,9 +64,9 @@ namespace TodoApp
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error");
-                }
+                } 
 
-                Console.WriteLine(output);
+                Console.WriteLine(output); 
             }
             else
             {
