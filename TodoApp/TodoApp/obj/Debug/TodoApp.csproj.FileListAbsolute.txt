@@ -22,3 +22,15 @@ C:\Users\jemez\Desktop\dev\personal\proyecto\TodoApp\TodoApp\TodoApp\obj\Debug\T
 C:\Users\jemez\Desktop\dev\personal\proyecto\TodoApp\TodoApp\TodoApp\obj\Debug\TodoApp.csproj.CoreCompileInputs.cache
 C:\Users\jemez\Desktop\dev\personal\proyecto\TodoApp\TodoApp\TodoApp\obj\Debug\TodoApp.exe
 C:\Users\jemez\Desktop\dev\personal\proyecto\TodoApp\TodoApp\TodoApp\obj\Debug\TodoApp.pdb
+C:\Users\E304\Desktop\project\TodoApp\TodoApp\TodoApp\bin\Debug\TodoApp.exe
+C:\Users\E304\Desktop\project\TodoApp\TodoApp\TodoApp\bin\Debug\TodoApp.pdb
+C:\Users\E304\Desktop\project\TodoApp\TodoApp\TodoApp\obj\Debug\TodoApp.csprojAssemblyReference.cache
+C:\Users\E304\Desktop\project\TodoApp\TodoApp\TodoApp\obj\Debug\TodoApp.FrmGrupo.resources
+C:\Users\E304\Desktop\project\TodoApp\TodoApp\TodoApp\obj\Debug\TodoApp.Login.resources
+C:\Users\E304\Desktop\project\TodoApp\TodoApp\TodoApp\obj\Debug\TodoApp.Password.resources
+C:\Users\E304\Desktop\project\TodoApp\TodoApp\TodoApp\obj\Debug\TodoApp.Properties.Resources.resources
+C:\Users\E304\Desktop\project\TodoApp\TodoApp\TodoApp\obj\Debug\TodoApp.csproj.GenerateResource.cache
+C:\Users\E304\Desktop\project\TodoApp\TodoApp\TodoApp\obj\Debug\TodoApp.csproj.CoreCompileInputs.cache
+C:\Users\E304\Desktop\project\TodoApp\TodoApp\TodoApp\obj\Debug\TodoApp.exe
+C:\Users\E304\Desktop\project\TodoApp\TodoApp\TodoApp\obj\Debug\TodoApp.pdb
+C:\Users\E304\Desktop\project\TodoApp\TodoApp\TodoApp\obj\Debug\TodoApp.main.resources

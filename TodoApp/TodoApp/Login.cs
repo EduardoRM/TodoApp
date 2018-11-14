@@ -58,8 +58,7 @@ namespace TodoApp
             dataAdapter.Fill(dt);
             if(dt.Rows.Count > 0)
             {
-                Form1 frm = new Form1();
-                frm.Show();
+                
             }
             else
             {
