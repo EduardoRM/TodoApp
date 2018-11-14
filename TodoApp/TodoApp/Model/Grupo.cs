@@ -18,12 +18,17 @@ namespace TodoApp.Model
             Grupo Grupo2 = new Grupo()
             {
                 IdGrupo = 2,
-                Nombre = "Primero",
+                Nombre = "Segundo",
                 Parent = 1,
                 childs = null
             };
 
-            Grupo Grupo6 = new Grupo() { };
+            Grupo Grupo6 = new Grupo() {
+                IdGrupo = 6,
+                Nombre = "Sexto",
+                Parent = 3,
+                childs = null
+            };
 
             Grupo Grupo3 = new Grupo()
             {
@@ -56,7 +61,7 @@ namespace TodoApp.Model
             Grupo Grupo5 = new Grupo()
             {
                 IdGrupo = 5,
-                Nombre = "Primero",
+                Nombre = "Quinto",
                 Parent = -1,
                 childs = new List<Grupo> {
                     Grupo4
