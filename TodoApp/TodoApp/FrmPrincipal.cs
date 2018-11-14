@@ -17,6 +17,34 @@ namespace TodoApp
         public Form1()
         {
             InitializeComponent();
+            InitializeNodeInTreeView();
+        }
+
+        public void aggreateNodes(Grupo item)
+        {
+
+            if (item.Parent == -1)
+            {
+                tvGrupos.Nodes.Add("Parent");
+            }
+            else
+            {
+               // lookUpNodesChild();
+            }
+        }
+
+        private void InitializeNodeInTreeView()
+        {
+            Grupo grupo = new Grupo();
+            List<Grupo> list = grupo.retrive();
+
+            foreach (Grupo item in list)
+            {
+                if (item.Parent == -1)
+                {
+                   aggreateNodes(item);
+                }
+            }
         }
 
         private void btnAgregarNodo_Click(object sender, EventArgs e)
